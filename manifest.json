@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "Top 5 Crypto Assets Tracker",
+  "version": "1.0",
+  "description": "Displays price values and history charts of the top 5 crypto assets from Messari.io",
+  "permissions": [
+    "storage",
+    "alarms",
+    "notifications"
+  ],
+  "host_permissions": [
+    "https://data.messari.io/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.svg",
+      "48": "icon.svg",
+      "128": "icon.svg"
+    }
+  },
+  "icons": {
+    "16": "icon.svg",
+    "48": "icon.svg",
+    "128": "icon.svg"
+  }
+}
